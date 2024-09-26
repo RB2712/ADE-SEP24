@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "df-sep24"
+		},
+		"LS_BLOB_connectionString": {
+			"value": ""
+		},
+		"LS_KV_BLOB_connectionString": {
+			"value": "DefaultEndpointsProtocol=https;AccountName=stgsep24;"
+		},
+		"LS_SQL_password": {
+			"value": ""
+		},
+		"LS_SQL_PARAM_password": {
+			"value": ""
+		},
+		"LS_SQL_PARAM1_password": {
+			"value": ""
+		},
+		"LS_KV_properties_typeProperties_baseUrl": {
+			"value": "https://kv-adesep.vault.azure.net/"
+		},
+		"LS_KV_SQL_properties_typeProperties_server": {
+			"value": "sqlserversep.database.windows.net"
+		},
+		"LS_KV_SQL_properties_typeProperties_database": {
+			"value": "db-sep24"
+		},
+		"LS_KV_SQL_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_SQL_properties_typeProperties_server": {
+			"value": "sqlserversep.database.windows.net"
+		},
+		"LS_SQL_properties_typeProperties_database": {
+			"value": "db-sep24"
+		},
+		"LS_SQL_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_SQL_PARAM_properties_typeProperties_server": {
+			"value": "sqlserversep.database.windows.net"
+		},
+		"LS_SQL_PARAM_properties_typeProperties_database": {
+			"value": "@{linkedService().DB_Name}"
+		},
+		"LS_SQL_PARAM_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_SQL_PARAM1_properties_typeProperties_server": {
+			"value": "sqlserversep.database.windows.net"
+		},
+		"LS_SQL_PARAM1_properties_typeProperties_database": {
+			"value": "@{linkedService().dbname}"
+		},
+		"LS_SQL_PARAM1_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"TAB_A2B_properties_dymaic schedule trigger_parameters_input_table": {
+			"value": "tab_a"
+		},
+		"TAB_A2B_properties_dymaic schedule trigger_parameters_output_table": {
+			"value": "tab_b"
+		},
+		"TAB_X2Y_properties_dymaic schedule trigger_parameters_input_table": {
+			"value": "tab_x"
+		},
+		"TAB_X2Y_properties_dymaic schedule trigger_parameters_output_table": {
+			"value": "tab_y"
+		},
+		"eventtrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/b0d8449e-0b4a-4704-a878-a7b480d63544/resourceGroups/RG-ADESEP24/providers/Microsoft.Storage/storageAccounts/stgsep24"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
