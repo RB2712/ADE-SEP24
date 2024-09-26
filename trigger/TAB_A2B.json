@@ -1,0 +1,28 @@
+{
+	"name": "TAB_A2B",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "dymaic schedule trigger",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"input_table": "tab_a",
+					"output_table": "tab_b"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2024-09-25T17:40:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

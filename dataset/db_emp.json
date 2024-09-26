@@ -1,0 +1,43 @@
+{
+	"name": "db_emp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "eid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "fname",
+				"type": "varchar"
+			},
+			{
+				"name": "lname",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "phone_number",
+				"type": "varchar"
+			},
+			{
+				"name": "dept",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

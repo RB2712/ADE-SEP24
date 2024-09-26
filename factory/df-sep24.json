@@ -1,0 +1,9 @@
+{
+	"name": "df-sep24",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5043ac64-4ff8-4d65-bcbf-b9b16786be08",
+		"tenantId": "a2576d4a-5603-45f8-be58-327f084fba1c"
+	}
+}
